@@ -10,22 +10,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Tomato-Potato</h1>
-      <h4>Time to work a little harder!</h4>
+    <h1>Pomodoro - Timer only</h1>
       
-      <div id="timer">
+      
+ <div id="timer">
       <h3>Timer</h3>
-      <p>Pomodoro!</p>
-      <p>Short brake.</p>
-      <p>Congrats! Long brake.</p>
-          <button onclick=start()>Start</button>
-          <button onclick=start()>Pause timer</button> <p>Make a remark, why pause?</p>
-      </div>
+     
+      <p>Pomodoro: </p>
+     <p id="pomstart"> 25:00 </p> <button onclick="start2()">Start</button>
+      <br>
+     
+      <p>Short brake: </p>
+   <p id="short"> 5:00</p>  <button onclick=start1()>Start</button>
+     
+     <br>
+     <p>Long brake: </p> 
+     <p id="longbr">10:00 </p> <button onclick=start3()>Start</button>
+     
+     <br>
+
+     <button onclick=start()>Pause timer</button> <p>Make a remark, why pause?</p>
+</div>
+      
+
 <div id="counter">
     <h3>Counter</h3>
       <p>Round: </p>
       <p>Pomodoro: </p>
       <p>Next:</p>
+    
+</div>
     <div id="notes">
         <p>tasks</p>
         <p>interruptions</p>
@@ -33,8 +47,8 @@
     
     </div>
     
-      </div>
     <!-- Optional JavaScript -->
+      <script src="js/pomodorist.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
