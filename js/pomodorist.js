@@ -1,17 +1,11 @@
-//function timerstart() {}
-
-//function timerpause() {}
-
-/*function whypause() {}
-
-function donesound() {}*/
+/*
 
    function isNegative(num) {
     if (isNaN(num)) {
     return false;
     }
     return Math.min(num, 0) != 0;
-    }
+    }*/
 
 
 var count1 = 5*60; 
