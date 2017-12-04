@@ -14,38 +14,31 @@
       
       
  <div id="timer">
-      <h3>Timer</h3>
+      <br>
      
-     <p>Pomodoro: </p>
-     <p id="pomstart"> 25:00 </p> <button onclick="start2()">Start</button>
+     <p>Pomodoro - time for work: </p>
+     <p id="pomstart"> 25:00 </p> <button onclick="start1()">Start</button>
       <br>
      
       <p>Short brake: </p>
-   <p id="short"> 5:00</p>  <button onclick=start1()>Start</button>
+   <p id="short"> 5:00</p>  <button onclick=start2()>Start</button>
      
      <br>
      <p>Long brake: </p> 
-     <p id="longbr">10:00 </p> <button onclick=start3()>Start</button>
+     <p id="long">10:00 </p> 
+     <button onclick=start3()>Start</button>
      
      <br>
 
-     <button onclick=start()>Pause timer</button> <p>Make a remark, why pause?</p>
+     <button id="pause" onclick=pause()>Pause</button> 
+     <p>Make a remark, why pause?</p>
+     <button id="reset" onclick=reset()>Reset</button> 
 </div>
       
+<script src="js/pomodorist.js"></script> 
 
-<div id="counter">
-    <h3>Counter</h3>
-      <p>Round: </p>
-      <p>Pomodoro: </p>
-      <p>Next:</p>
     
-</div>
-    <div id="notes">
-        <p>tasks</p>
-        <p>interruptions</p>
-        <p>do later</p>       
-    
-    </div>
+
     
     <!-- Optional JavaScript -->
       <script src="js/pomodorist.js"></script>
