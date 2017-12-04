@@ -48,6 +48,7 @@ function counter2() {
         count2=300;
         clearInterval(intervalIdentifier2);
         document.getElementById("short").innerHTML="5:00";
+        document.getElementById("check1").checked = false;
     }
     count2--;
     document.getElementById("short").innerHTML= minutes + ":" + seconds;

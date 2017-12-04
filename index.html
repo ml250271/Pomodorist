@@ -2,38 +2,71 @@
 <html lang="en">
   <head>
     <title>Pomodorist</title>
+      <link rel="stylesheet" type="text/css" href="css/pomodorist.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
   </head>
   <body>
-    <h1>Pomodoro - Timer only</h1>
+    <h1>Pomodoro Timer</h1>
       
       
- <div id="timer">
-      <br>
+ <ul id="timer">
+      
+     <li>
+        <p>Pomodoro - time for work: </p>
+        <p id="pomstart"> 25:00 </p>
+        <button onclick="start1()">Start</button>
+    </li>
      
-     <p>Pomodoro - time for work: </p>
-     <p id="pomstart"> 25:00 </p> <button onclick="start1()">Start</button>
-      <br>
+     <li></li>
+      
+     <li>
+         <p>Short brake: </p>
+         <p id="short"> 5:00</p>
+         <button onclick=start2()>Start</button>
+         <br>
+         <br>
+         
+<label class="container">One
+  <input type="checkbox" id="check1" >
+  <span class="checkmark"></span>
+</label>
+<label class="container">Two
+  <input type="checkbox" id="check2" checked=false; >
+  </label>
+<label class="container">Three
+  <input type="checkbox" id="check3" checked="">
+</label>
+   </li>
      
-      <p>Short brake: </p>
-   <p id="short"> 5:00</p>  <button onclick=start2()>Start</button>
-     
+   <li></li>
+     <li>
+         
+        <p>Long brake: </p> 
+        <p id="long">10:00 </p> 
+        <button onclick=start3()>Start</button>
+     </li>
+
      <br>
-     <p>Long brake: </p> 
-     <p id="long">10:00 </p> 
-     <button onclick=start3()>Start</button>
+      </ul>
+        <br>
+        <br>
      
-     <br>
 
      <button id="pause" onclick=pause()>Pause</button> 
-     <p>Make a remark, why pause?</p>
+   
+      
+           <br>
+     <br>
+
      <button id="reset" onclick=reset()>Reset</button> 
-</div>
+     
+      
+      
       
 <script src="js/pomodorist.js"></script> 
 

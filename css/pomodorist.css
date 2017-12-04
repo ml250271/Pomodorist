@@ -1,1 +1,30 @@
+body {
+    background-color: beige;
+    border: solid;
+    padding: 20px;
+}
 
+h1 {
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 10;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li {
+    display: block;
+    
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
