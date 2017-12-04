@@ -14,9 +14,9 @@
     <h1>Pomodoro Timer</h1>
       
       
- <ul id="timer">
+ <ul>
       
-     <li>
+     <li id="timer">
         <p>Pomodoro - time for work: </p>
         <p id="pomstart"> 25:00 </p>
         <button onclick="start1()">Start</button>
@@ -24,9 +24,9 @@
      
      <li></li>
       
-     <li>
-         <p>Short brake: </p>
-         <p id="short"> 5:00</p>
+     <li id="timer">
+         <p>Short break:</p>
+         <p id="short">5:00</p>
          <button onclick=start2()>Start</button>
          <br>
          <br>
@@ -36,17 +36,17 @@
   <span class="checkmark"></span>
 </label>
 <label class="container">Two
-  <input type="checkbox" id="check2" checked=false; >
+  <input type="checkbox" id="check2">
   </label>
 <label class="container">Three
-  <input type="checkbox" id="check3" checked="">
+  <input type="checkbox" id="check3">
 </label>
    </li>
      
    <li></li>
-     <li>
+     <li id="timer">
          
-        <p>Long brake: </p> 
+        <p>Long break: </p> 
         <p id="long">10:00 </p> 
         <button onclick=start3()>Start</button>
      </li>
