@@ -11,61 +11,69 @@
   
   </head>
   <body>
-    <h1>Pomodoro Timer</h1>
+      <h1>Pomodoro Timer</h1>
+  
       
-      
- <ul>
-      
-     <li id="timer">
-        <p>Pomodoro - time for work: </p>
-        <p id="pomstart"> 25:00 </p>
-        <button onclick="start1()">Start</button>
-    </li>
+ 
+  <div class="pomodoro_holder">   
+ 
+    <div id="timer">
+        <p><strong>Pomodoro</strong>-time for work: </p>
+      <p id="pomstart"> 25:00 </p>
+      <button onclick="start1()">Start</button>
+    </div>
+    
+    <div id="timer">
+        
+      <p><strong>Short break: </strong></p>
+      <p id="short"> 5:00</p>
+          <button onclick=start2()>Start</button>
+
+        
+      <div id="form"> 
+        <label class="container">One
+          <input type="checkbox" id="check1" >
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Two
+          <input type="checkbox" id="check2">
+          </label>
+        <label class="container">Three
+          <input type="checkbox" id="check3">
+        </label>
+      </div> 
+    </div>
      
-     <li></li>
-      
-     <li id="timer">
-         <p>Short break:</p>
-         <p id="short">5:00</p>
-         <button onclick=start2()>Start</button>
-         <br>
-         <br>
-         
-<label class="container">One
-  <input type="checkbox" id="check1" >
-  <span class="checkmark"></span>
-</label>
-<label class="container">Two
-  <input type="checkbox" id="check2">
-  </label>
-<label class="container">Three
-  <input type="checkbox" id="check3">
-</label>
-   </li>
-     
-   <li></li>
-     <li id="timer">
-         
-        <p>Long break: </p> 
+    <div id="timer">       
+        <p><strong>Long break: </strong></p> 
         <p id="long">10:00 </p> 
         <button onclick=start3()>Start</button>
-     </li>
+    </div>
 
-     <br>
-      </ul>
-        <br>
-        <br>
-     
-
+    
+  <!-- </ul> -->
+  </div>     
      <button id="pause" onclick=pause()>Pause</button> 
-   
-      
-           <br>
-     <br>
-
      <button id="reset" onclick=reset()>Reset</button> 
-     
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       
+      <div id="end">
+        <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"><i>Read about Pomodoro Technique</i></a>
+           <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <p>&copy; PZORG 2017</p>  
+       </div> 
       
       
 <script src="js/pomodorist.js"></script> 

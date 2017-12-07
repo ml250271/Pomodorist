@@ -8,6 +8,7 @@ var isStarted3 = false;
 var count1 = 1500;
 var count2 = 300;
 var count3 = 600;
+var audio = new Audio("musical010.wav");
 
 function counter1() {
     
@@ -16,6 +17,7 @@ function counter1() {
     if(count1==0) {
         count1 = 1500;
         clearInterval(intervalIdentifier1);
+        audio.play();
         //document.getElementById("pomstart").innerHTML="25:00";
     }
     count1--;
@@ -47,6 +49,7 @@ function counter2() {
     if(count2==0) {
         count2 = 300;
         clearInterval(intervalIdentifier2);
+        audio.play();
         //document.getElementById("short").innerHTML="5:00";
         
     }
@@ -80,6 +83,7 @@ function counter3() {
     if(count3==0) {
         count3=600;
         clearInterval(intervalIdentifier3);
+        audio.play();
         document.getElementById("long").innerHTML=minutes + ":" + seconds;
         document.getElementById("check1").checked = false;
         document.getElementById("check2").checked = false;
