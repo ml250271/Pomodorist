@@ -24,26 +24,7 @@ h1 {
     margin-bottom: 75px;
 }
 
-/* Sklanjam ti sve vezano za ul -> li jer to ne treba koristiti osim ako ne zelis neku listu za nabrajanje da napravis */
-/* ul {
-    list-style-type: none;
-    margin: 15px;
-    padding: 10;
-    overflow: hidden;
-    
-}
 
-li {
-    float: left;
-}
-
-li {
-    display: block;
-    
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-} */
 
 /* Ubacujem ti display:flex, u sustini on se brine da ti sve bude u pravilnom flow-u. Bitno je da znas da ako to koristis da moras na svim elemntima da radis sa flexom */
 /* Takodje koristim position:relative, pogledaj razliku izmedju relative, absolute i static to je mnogo bitno! */
@@ -107,6 +88,7 @@ tu ce ti biti jasno sta sam ovde uradio
   a {
         color: black;
         text-decoration: none;
+        
     }
     /*change hyperlink style on hover to improve usability*/
     a:hover {
